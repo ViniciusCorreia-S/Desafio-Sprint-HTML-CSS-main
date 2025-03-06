@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --azul-base:#1b357e;
+    --branco-secundario:#ffff;
+    --azul-strong: rgb(6, 6, 206);
+    --cinza-hover:#586981;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    background-color: var(--branco-secundario);
+    top: 0;
+    position: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    width: 12rem;
+} 
+
+.home_div{
+    background-color: var(--branco-secundario);
+    width: 38rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.home {
+    font-family: "Roboto Condensed", serif;
+    text-decoration: none;
+    color: inherit;
+    color: var(--azul-base);
+    font-size: 1.7rem;
+}
+.home:hover {
+    border-bottom: 0.5px solid var(--cinza-hover);
+    top: 15%;
+    transform: translate(0, -15%);
+    color: var(--cinza-hover);
+}
+
+.invisivel {
+    background-color: var(--branco-secundario);
+    width: 12rem;
+    height: 1rem;
+    margin-right: 1%;
+}
+
+main iframe {
+    width: 100%;
+    height: 32rem;
+}
+
+main .layout {
+    width: 100%;
+    height: 45%;
+    background-color: var(--branco-secundario);
+    display: flex;
+    justify-content: center;
+}
+.layout .carros {
+    width: max-content;
+    display: flex;
+    gap: 8rem;
+}
+.layout .carros .info {
+    font-family: "Roboto Condensed", serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.layout .carros .carro .info .text {
+    .valor {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .promo {
+        color: var(--cinza-hover);
+        font-size: 0.9rem;
+        text-decoration: line-through;
+    }
+    .nome {
+        font-size: 1.2rem;
+        color: var(--azul-base);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nome:hover {
+        color: var(--cinza-hover);
+    }
+}
+.layout .carros .info .info_img {
+    width: 1.5rem;
+    right: 0;
+    bottom: 0;
+}
+.layout .carros .info input {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+main .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    button {
+        width: 14rem;
+        height: 2.5rem;
+        font-size: 1.3rem;
+        background-color: var(--azul-base);
+        border-radius: 10px;
+        font-family: "Roboto Condensed", serif;
+        color: var(--branco-secundario);
+    }
+}
+main .button button:hover {
+    background-color: var(--cinza-hover);
+}
+
+footer {
+    background-color: var(--azul-base);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    position: fixed;
+}
+
+.redes {
+    color: var(--branco-secundario);
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    p {
+        display: inline;
+        font-family: "Roboto Condensed", serif;
+        font-size: 1.2rem;
+    }
+    img {
+        width: 2.5rem;
+    }
+}
+.redes a :hover {
+    opacity: 0.5; /*almentar a transparencia da img */
+}
+.copyright {
+    margin-right: 2%;
+}
+
+@media (max-width: 1400px) {
+    header{
+        max-height: 4rem;
+    }
+    .home_div {
+        width: 29rem;
+    }
+    .home h1 {
+        font-size: 1.3rem;
+    }
+    .logo img {
+        width: 8rem;
+    } 
+    iframe {
+        max-height: 18rem;
+    }
+    .layout .carros {
+        gap: 5rem;
+        img {
+            width: 14rem;
+        }
+        .carro .info .text {
+            .valor {
+                font-size: 0.8rem;
+            }
+            strong {
+                font-size: 1rem;
+            }
+            .promo {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    main .button button {
+        max-width: 10rem;
+        max-height: 2rem;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1.5rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 18rem;
+    }
+    .layout .carros {
+        img {
+            width: 14rem;
+        }
+        .carro .carro .info .text {
+            .valor {
+                font-size: 0.9rem;
+            }
+            strong {
+                font-size: 1.2rem;
+            }
+            .promo {
+                font-size: 0.7rem;
+            }
+        }
+        .carro .info .text .promo {
+            font-size: 1rem;
+        }
+        .info input {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    main .button button {
+        max-width: 11rem;
+        max-height: 1.8rem;
+        font-size: 1rem;
+    }
+    footer {
+        max-height: 4rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+    
+}
+@media (max-width: 920px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1.5rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 25rem;
+    }
+    .layout .carros {
+        flex-direction: column;
+        padding-top: 5%;
+        img {
+            width: 18rem;
+        }
+        .info .text {
+            .valor {
+                font-size: 1.5rem;
+            }
+            strong {
+                font-size: 1.8rem;
+            }
+            .promo {
+                font-size: 1.3rem;
+            }
+        }
+        .info input {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    main .button {
+        padding-top: 10%;
+        padding-bottom: 15%;
+        button {
+            max-width: 16rem;
+            max-height: 4rem;
+            font-size: 1.5rem;
+        }
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 15rem;
+    }
+    .layout .carros {
+        padding-top: 5%;
+        gap: 5rem;
+        img {
+            width: 10rem;
+        }
+        .info .text {
+            .valor {
+                font-size: 0.6rem;
+            }
+            
+            strong {
+                font-size: 0.8rem;
+            }
+            .promo {
+                font-size: 0.5rem;
+            }
+        }
+        .info input {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+    main .button button {
+        max-width: 9rem;
+        max-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
+@media (max-width: 650px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 15rem;
+    }
+    .layout .carros {
+        flex-direction: column;
+        padding-top: 4%;
+        gap: 3rem;
+        img {
+            width: 12rem;
+        }
+        .info {
+            .text {
+                .valor {
+                    font-size: 0.8rem;
+                }
+                
+                strong {
+                    font-size: 1rem;
+                }
+                .promo {
+                    font-size: 0.6rem;
+                }
+            }
+            input {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .info_img {
+                width: 1.5rem;
+            }
+        }
+    }
+    main .button {
+        padding-top: 5%;
+        padding-bottom: 15%;
+        button {
+            max-width: 12rem;
+            max-height: 2rem;
+            font-size: 1rem;
+        }
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
+@media (max-width: 375px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    .invisivel {
+        width: 4rem;
+    }
+    iframe {
+        max-height: 15rem;
+    }
+    .layout .carros {
+        flex-direction: column;
+        padding-top: 4%;
+        gap: 3rem;
+        img {
+            width: 12rem;
+        }
+        .carro .info {
+            .text {
+                .valor {
+                    font-size: 1rem;
+                }
+                
+                strong {
+                    font-size: 1rem;
+                }
+                .promo {
+                    font-size: 0.6rem;
+                }
+            }
+            input {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .info_img {
+                width: 1.5rem;
+            }
+        }
+    }
+    main .button {
+        padding-top: 10%;
+        padding-bottom: 20%;
+        button {
+            max-width: 12rem;
+            max-height: 2rem;
+            font-size: 1rem;
+        }
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes {
+        img {
+            max-width: 2rem;
+        }
+        p {
+            display: none;
+        }
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
