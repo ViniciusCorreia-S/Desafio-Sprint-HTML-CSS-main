@@ -177,24 +177,53 @@ footer {
     .layout .carros {
         gap: 5rem;
         img {
-            width: 14rem;
+            width: 12rem;
         }
         .carro .info .text {
             .valor {
                 font-size: 0.8rem;
             }
-            strong {
+            .nome {
                 font-size: 1rem;
             }
             .promo {
                 font-size: 0.7rem;
             }
         }
+        .button_ficha {
+            button {
+                margin-top: 5%;
+                font-size: 0.8rem;
+                background-color: var(--branco-secundario);
+                border: solid 2px var(--azul-base);
+                color: var(--azul-base);
+                font-weight: bold;
+            }
+        }
+        .table {
+            font-size: 2rem;
+            margin: auto;
+            height: 50vh;
+            width: 50vw;
+            background-color: var(--cinza-hover);
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
     }
     main .button button {
         max-width: 10rem;
         max-height: 2rem;
         font-size: 1rem;
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
     }
     
 }

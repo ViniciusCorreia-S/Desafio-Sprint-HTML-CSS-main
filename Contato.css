@@ -88,7 +88,7 @@ body main {
             color: var(--cinza-hover);
         }
     }
-    .Sobre_voce {
+    .Sobre_voce form {
         width: auto;
         height: auto;
         display: flex;
@@ -98,8 +98,8 @@ body main {
         input {
             border-radius: 5px;
             width: 20rem;
-            height: 2.2rem;
-            margin-bottom: 8%;
+            height: 2rem;
+            margin-bottom: 5%;
             font-size: 1rem;
         }
         h1 {
@@ -107,18 +107,16 @@ body main {
             padding-bottom:5% ;
             font-family: "Roboto Condensed", serif;
         }
-        form {
-            margin-bottom: 5%;
-            select {
-                border-radius: 5px;
+        select {
+            border-radius: 5px;
+            width: 20rem;
+            height: 2rem;
+            font-size: 1.2rem;
+            margin-bottom: 4%;
+            option {
                 width: 20rem;
                 height: 2.2rem;
-                font-size: 1.2rem;
-                option {
-                    width: 20rem;
-                    height: 2.2rem;
-                    
-                }
+                
             }
         }
         textarea {
@@ -127,8 +125,7 @@ body main {
           }
         p {
             font-family: "Roboto Condensed", serif; 
-            font-size: 1.1rem;
-            padding-top: 4%;
+            font-size: 1rem;
         }
         .button {
             height: max-content;
